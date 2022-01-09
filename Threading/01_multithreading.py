@@ -22,7 +22,7 @@ def time_tracking(fun):
         init_time = datetime.now()
         res_fun: Any = fun(*args, **kwargs)
         res_time = datetime.now() - init_time
-        return f"{res_fun}\nВремя выполнения {fun.__name__} {res_time.microseconds} мкс"
+        return f"{res_fun}\nВремя выполнения {fun.__name__} {res_time.seconds} с"
 
     return wrapper
 
