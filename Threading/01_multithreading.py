@@ -40,6 +40,7 @@ def save_photo(all_data: list) -> str:
         with open(full_path, 'wb') as img:
             img.write(photo_to_save.content)
         i += 1
+        print(f"Скачано фото {full_path}")
     return f"Скачано {i} фотографий"
 
 
